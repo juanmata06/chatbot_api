@@ -1,6 +1,7 @@
 envs/
 chatbot_api/static/
 chatbot_api/db.sqlite3
+chatbot_api/.env
 
 __pycache__/
 */migrations/*.pyc

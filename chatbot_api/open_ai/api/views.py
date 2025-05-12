@@ -1,11 +1,14 @@
+import os
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from openai import OpenAI
+
 from open_ai.api.serializers import PostMessageSerializer
 from open_ai.models import Chat
 
-from openai import OpenAI
-client = OpenAI(api_key="")
+openai_api_key = os.getenv('OPEN_AI_KEY')
+client = OpenAI(api_key=openai_api_key)
 
 
 class PostMessage(APIView):
