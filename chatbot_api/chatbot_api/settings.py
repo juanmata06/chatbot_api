@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     # My apps:
     'user',
-    # 'gpt_chat'
+    'open_ai'
 ]
 
 MIDDLEWARE = [
